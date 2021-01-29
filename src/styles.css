@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.panning {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.node {
+  position: absolute;
+  z-index: 5;
+  transition: transform 250ms ease;
+}
+
+.dropZone {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: yellow;
+}
